@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NBP Sales Preparation Tool
 
 A comprehensive Streamlit application for NBP (National Business Partners) sales representatives to manage prospects, extract data from websites and LinkedIn, generate AI-powered sales scripts, and improve their sales pitch effectiveness.
@@ -250,3 +251,6 @@ For support and questions:
 - User authentication system
 - Database integration
 - Basic CRUD operations 
+=======
+# sales_training_tool
+>>>>>>> 75fd4f80b892964464d91852d34e4225f4131d40
