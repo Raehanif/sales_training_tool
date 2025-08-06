@@ -17,7 +17,7 @@ class PDFReportGenerator:
     
     def __init__(self):
         # Use the correct logo path
-        self.logo_path = r"F:\Baraaq\Test Projects\Dan - Sales Pitch Improver\unnamed (2).jpg"
+        self.logo_path = r"unnamed (2).jpg"
         self.company_name = "NBP"
         self.styles = getSampleStyleSheet()
         self._setup_custom_styles()
