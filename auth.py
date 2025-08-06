@@ -208,7 +208,7 @@ def create_custom_login_page():
     """, unsafe_allow_html=True)
     
     # Logo path
-    logo_path = r"F:\Baraaq\Test Projects\Dan - Sales Pitch Improver\unnamed (2).jpg"
+    logo_path = r"unnamed (2).jpg"
     
     # Convert logo to base64
     logo_base64 = get_image_base64(logo_path)
