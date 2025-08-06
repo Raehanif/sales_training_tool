@@ -369,6 +369,11 @@ def load_custom_css():
         border: 1px solid rgba(255,0,0,0.1) !important;
         border-top: none !important;
     }
+    /* Force all default text to black, except explicitly styled */
+body, h2, h3, h4, h5, h6, p, span, div, li, ul, ol, label {
+    color: black !important;
+}
+
     </style>
     """, unsafe_allow_html=True)
 
@@ -390,7 +395,8 @@ def display_header():
     """Display NBP branded header"""
     st.markdown("""
     <div class="main-header">
-        <h1>🏢 NBP Sales Preparation Tool</h1>
+        <h1 style="color:white;">🏢 NBP Sales Preparation Tool</h1>
+
         <p>Simple Prospect Management and AI Report Generation</p>
     </div>
     """, unsafe_allow_html=True)
