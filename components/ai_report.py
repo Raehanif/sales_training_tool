@@ -76,8 +76,14 @@ def initialize_openai_client(api_key: str) -> Optional[openai.OpenAI]:
         return None
 
 def get_environment_api_key() -> Optional[str]:
-    """Get hardcoded OpenAI API key"""
-    return "abc"
+    """
+    Retrieve the OpenAI API key from environment variables.
+    This key must be set in a `.env` file or in your deployment environment.
+    """
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        st.warning("⚠️ No OpenAI API key found. Please set OPENAI_API_KEY in your environment.")
+    return api_key
 
 def check_openai_version() -> bool:
     """Check if OpenAI library version is compatible"""
